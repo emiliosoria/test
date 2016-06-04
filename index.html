@@ -13,42 +13,9 @@ body {
 </style>
 </head>
 <body>
-<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
 
-<div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="video-container modal-content">
         <iframe id="ytplayer" type="text/html" width="640" height="640"
 			  src="https://www.youtube.com/embed?listType=playlist&list=PLRH50PNqbO1Eguf8Q-74wB0m8RzH90q23&autoplay=1"
 			  frameborder="0"/>	 
 		
-      </div>
-    </div>
-</div>
-
-<div>addsasdasdas</div>
-
-<script>
-function fitWidget() {
-        var widget = $("html");
-        var height = $("body").height();
-		var width = $("body").width();
-        $("#myModal").height(height);
-		$("#myModal").width(width);
-        //size widget to take the whole view
-        //widget.height(height);
-        //widget.resize(true);
-    };
-    $(window).resize(function () {
-        clearTimeout(window._resizeId);
-        window._resizeId = setTimeout(function () {
-            fitWidget();
-        }, 500);
-    });
-    fitWidget();
-</script>
-
 </body>
-</html>
